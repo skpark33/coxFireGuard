@@ -61,11 +61,11 @@
 
 
 
-#include "../../../SpiderCtrl API/include/SpiderCtrl_Interface.h"
+#include "SpiderCtrl API/include/SpiderCtrl_Interface.h"
 #ifdef _WIN64
-	#pragma comment(lib, "../../../SpiderCtrl API/lib/x64/SpiderCtrl.lib")
+	#pragma comment(lib, "SpiderCtrl API/lib/x64/SpiderCtrl.lib")
 #else
-	#pragma comment(lib, "../../../SpiderCtrl API/lib/x86/SpiderCtrl.lib")
+	#pragma comment(lib, "SpiderCtrl API/lib/x86/SpiderCtrl.lib")
 #endif
 
 
@@ -93,3 +93,8 @@ using namespace std;
 												GetExitCodeThread(mhthread, &dwRet);\
 												Sleep(100);\
 											}}
+
+
+
+#define UBC_CONFIG_PATH	"C:\\SQISoft\\UTV1.0\\execute\\data\\"
+#define UBCBRW_INI				_T("UBCBrowser.ini")
